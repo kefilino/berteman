@@ -1,0 +1,425 @@
+body {
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+div.transbox {
+    overflow: hidden;
+    margin: 30px 10px;
+    height: 450px;
+    color: white;
+    padding: 0% 1%;
+    background-color: rgba(10, 10, 20, 0.6);
+    border-radius: 2.5%;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.account-wall {
+    animation: fadein 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 50px 50px 50px;
+    position: center;
+    width: 20%;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.account-wall .create-post textarea {
+    background-color: #f8f8f8cc;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    padding: 12px 20px;
+    resize: none;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.account-wall .create-post textarea:focus {
+    background-color: #f8f8f8;
+    border: 2px solid lightblue;
+    transition: 0.5s;
+}
+
+.account-wall .edit-post {
+    display: none;
+}
+
+.account-wall .edit-post textarea {
+    background-color: #f8f8f8cc;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    padding: 12px 20px;
+    resize: none;
+    transition: 0.5s;
+    width: 50%;
+}
+
+.account-wall .edit-post textarea:focus {
+    background-color: #f8f8f8;
+    border: 2px solid lightblue;
+    transition: 0.5s;
+}
+
+.account-wall .profile {
+    min-height: 40vh;
+    padding: 1% 3%;
+    width: 100%;
+}
+
+.account-wall .profile img {
+    border-radius: 25%;
+    float: left;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    object-fit: cover;
+    width: 200px;
+}
+
+.account-wall .profile label {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.alert {
+    margin-bottom: 2.5%;
+    padding: 1% 1%;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: rgba(0, 0, 0);
+    color: red;
+}
+
+.alert-success {
+    background-color: rgba(0, 0, 0);
+    color: greenyellow;
+}
+
+.btn {
+    background-color: orange;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.dot {
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2.5px;
+    vertical-align: middle;
+    width: 2.5px;
+}
+
+.feeds {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 75vh;
+    padding: 1% 3%;
+    width: 50vw;
+}
+
+.feeds img {
+    border-radius: 25%;
+    float: left;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+    width: 60px;
+}
+
+.feeds h3 {
+    position: relative;
+}
+
+.feeds .post {
+    margin-top: 20px;
+    min-height: 25%;
+    padding: 1% 3%;
+    width: 90%;
+}
+
+.feeds .post .post-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.feeds a {
+    color: orangered;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.feeds a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.feeds .user-detail {
+    height: 60px;
+}
+
+.feeds .user-detail .date {
+    color: grey;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.feeds .user-detail .fullname {
+    color: orange;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.form-group .form-control-file {
+    padding: 10px;
+}
+
+.form-group .form-control {
+    border: none;
+    border-bottom: 3px solid orange;
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: center;
+    transition: 0.3s;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.form-group .form-control:focus {
+    border-bottom: 3px solid orangered;
+    transition: 0.3s;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    border: none;
+    border-bottom: 3px solid orange;
+    color: black;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: center;
+    transition: 0.3s;
+    width: 330px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-bottom: 3px solid orangered;
+    transition: 0.3s;
+}
+
+.form-signin .new-account {
+    color: orange;
+    float: right;
+    margin-top: 20px;
+    text-decoration-color: darkorange;
+    transition: 0.3s;
+}
+
+.form-signin .new-account:hover {
+    color: orangered;
+    text-decoration-color: orangered;
+}
+
+.form-signin input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+}
+
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}
+
+.form-signup {
+    margin: 0 auto;
+    max-width: 30vw;
+    padding: 15px;
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(10, 10, 20, 0.9);
+    padding: 1% 1%;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.header a {
+    border-radius: 2px;
+    color: #cccccc;
+    float: left;
+    font-size: 18px;
+    line-height: 15px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    color: orange;
+    transition: 0.3s;
+}
+
+.header a.active {
+    background-color: orange;
+    color: white;
+}
+
+.header a.logo {
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.header input[type=text] {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url('http://www.kirupa.com/images/search.png');
+    background-position: 5px 7.5px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px 10px;
+    color: white;
+    float: left;
+    left: 50px;
+    padding: 10px 30px;
+    position: relative;
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.header input[type=text]:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(173, 216, 230, 0.9);
+    outline-offset: -10px;
+    color: black;
+    width: 25%;
+    transition: 0.4s;
+}
+
+.header .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.header .dropdown .dropbtn {
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.header .dropdown .dropbtn:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    font-family: inherit;
+    margin: 0;
+}
+
+.header .dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.2);
+    right: 0;
+    margin-top: 39px;
+    max-width: 20vw;
+    min-width: 15vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header .dropdown-content a {
+    color: white;
+    display: block;
+    float: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: inherit;
+}
+
+.header .dropdown-content a:hover {
+    background-color: orangered;
+}
+
+.header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-right {
+    float: right;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
